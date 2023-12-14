@@ -1,0 +1,68 @@
+\documentclass[12pt, a4paper]{article}
+%字体大小为12点，纸张大小为A4。
+\usepackage[utf8]{inputenc}
+%在inputenc中使用UTF-8编码，以支持中文和其他Unicode字符
+\usepackage{ctex}
+%引入ctex宏包，提供对中文的支持
+\usepackage{amsmath, amssymb, amsthm}
+
+% 设置页面布局
+\usepackage[left=2.5cm, right=2.5cm, top=3cm, bottom=3cm]{geometry}
+
+% 定义数学定理环境 这些都是自定义环境
+\newtheorem{theorem}{定理}[section]
+\newtheorem{definition}{定义}[section]
+\newtheorem{example}{例子}[section]
+\newtheorem{corollary}{推论}[section]
+\newtheorem{lemma}{引理}[section]
+\newtheorem{proposition}{命题}[section]
+
+\newtheorem{case}{情形}[section]
+\newtheorem{tips}{tip}[section]
+
+\usepackage{enumitem}
+
+% 设置全局段落缩进
+\setlist[1]{left=1em}   % 一级段落缩进为1em
+\setlist[2]{left=2em}   % 二级段落缩进为2em
+\setlist[3]{left=3em}   % 三级段落缩进为3em
+
+% 文档开始
+\begin{document}
+
+\title{数学人数学魂}
+\author{Xinyi}
+\date{\today}
+\maketitle
+
+
+\section{矩阵特征根为重根时的若尔当快}
+
+\section{拆成简单分式}
+\begin{definition}
+    这是一个定义的例子。
+\end{definition}
+
+\begin{theorem}
+    这是一个定理的例子。
+\end{theorem}
+
+\section{证明}
+提供一些证明的例子。
+
+\begin{proof}
+    这是一个证明的例子。
+\end{proof}
+
+\section{例子}
+展示一些数学例子。
+
+\begin{example}
+    这是一个例子。
+\end{example}
+
+\section{一边学latex一边学常微分}
+
+
+% 文档结束
+\end{document}

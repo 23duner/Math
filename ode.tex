@@ -19,7 +19,7 @@
 
 \newtheorem{case}{情形}[section]
 \newtheorem{tips}{tip}[section]
-
+\newtheorem{question}{问题}[section]
 \usepackage{enumitem}
 
 % 设置全局段落缩进
@@ -60,16 +60,51 @@
         \left\{
             \begin{array}{l}
         F(x, y, p)=0 \\
-        F c^{\prime}(x, y, p)=0
+        Fp^{\prime}(x, y, p)=0
         \end{array}
         \right.
         $$\\
     \end{case}
 \end{case}
 
-\section{基本概念}
-介绍一些基本的数学概念和定义。
-
+\section{平面定性理论}
+只学平面系统，易于对特征根情况分类
+\section{课后题背诵}
+\begin{example}
+在条形区域 $a \leqslant x \leqslant b,|y|<+\infty$ 上, 
+假设方程 $\frac{dy}{dx} = f(x, y)$的所有解都唯一, 对其中任意两个解 $y_1(x), y_2(x)$, 
+如果有 $y_1\left(x_0\right)<y_2\left(x_0\right)$, 
+则必有 $y_1(x)<y_2(x), x_0 \leqslant x \leqslant b$.
+\end{example}
+\begin{proof}
+    反证法：假设存在$x{\prime}$,
+    使得 \(y_1\left(x'\right) \geq y_2\left(x'\right)\)。\\
+    若第一种情况 \(y_1\left(x'\right) = y_2\left(x'\right) = y'\)，\\
+    而根据解的存在唯一性，知过点 \((x', y')\) 的解应为唯一解，矛盾。\\
+    若第二种情况 \(y_1\left(x'\right) > y_2\left(x'\right)\)，\\
+    而根据连续性，可知 \(y_1\left(x'\right) = y_2\left(x'\right)\) 矛盾。    
+    故假设不成立，证毕。
+\end{proof}
+\begin{example}
+    .3 1. 试证明: 对任意的 $x_0$ 及满足条件 $0<y_0<1$ 的 $y_0$, 
+    方程 $\frac{\mathrm{d} y}{\mathrm{~d} x}=\frac{y(y-1)}{1+x^2+y^2}$ 的满足条件 $y\left(x_0\right)=y_0$ 的解
+     $y=y(x)$ 在 $(-\infty,+\infty)$ 上存在.
+\end{example}   
+\begin{proof}
+   首先找特解：y=0,y=1是方程在$(-\infty,+\infty)$上的特解。\\
+   \begin{definition}特解
+    不依赖于任何常数
+    \end{definition}
+    易知方程的右端函数满足解的延展定理和存在唯一性定理条件\\
+    \begin{question}
+        延展定理和存在唯一性定理的条件究竟一样不一样
+    \end{question}
+    现在考虑过初值\(x_0, y_0\)的解，根据唯一性，该解不能穿过直线y=0和y=1。\\
+    因此只能向左右两侧延展，从而初值解在\(-\infty,+\infty\)上存在。
+\end{proof}
+\begin{example}
+    设
+\end{example}
 \begin{definition}
     这是一个定义的例子。
 \end{definition}
@@ -101,6 +136,9 @@
 \begin{tips}
 如果你想在文本中显示一个反斜杠，可以使用两个反斜杠 \\ \\
 同时，两个反斜杠也有换行作用
+\end{tips}
+\begin{tips}
+    一些待办，缩进设置
 \end{tips}
 % 文档结束
 \end{document}
